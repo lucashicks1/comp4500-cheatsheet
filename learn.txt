@@ -1,0 +1,8 @@
+- GRAPH STUFF
+- KRUSKALS
+- PRIMS
+
+Look at CLRS for proof of O(lg E) for MST-Kruskal
+
+- slide 70 & 71 GRAPH DISTANCES PPTX
+- Matrix Chain Multiplication

@@ -41,21 +41,23 @@ where $n slash b$ can be $floor(n slash b)$ or $ceil(n slash b)$
 #rule()
 
 *Case 1*:\
-$n^(log_b a)$ *polynomially larger than* $f(n)$\
+$ n^(log_b a) "polynomially larger than" f(n) $
 $ f(n) in O(n^(log_b a - epsilon)) "for some" epsilon > 0 $
 Solution: $Theta(n^(log_b a))$
 
 #rule()
 
 *Case 2*:\
-$n^(log_b a) lg^k n$ *same tight bound as* $f(n)$ for some constant $k >= 0$\
+$ n^(log_b a) lg^k n "same bound as" f(n) $
 $ f(n) in Theta(n^(log_b a) lg^(k) n) "for some" k >= 0 $
 Solution: $Theta(n^(log_b a) lg^(k + 1) n)$
 
 #rule()
 
 *Case 3*:\
-$f(n)$ *polynomially larger than* $n^(log_b a)$ and $f(n)$ is regular\
+$  & f(n) "polynomially larger than" n^(log_b a) \
+   & "and" f(n) "is regular" $
+
 $  & "if" f(n) in Omega(n^(log_b a + epsilon)) "for some" epsilon > 0 \
    & "and" a f (n / b) <= c f(n) $
 Solution: $Theta(f(n))$

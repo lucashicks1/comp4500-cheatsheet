@@ -1,18 +1,11 @@
 #import "template.typ": *
 
 #show: knowledge-key.with()
-#set math.equation(numbering: "(1)")
 
-#include "parts/1_bounds_maths.typ"
-#include "parts/2_recurrences.typ"
-
-= Graphs
-
-== Intro
-
-== Minimum Spanning Tree
-
-= Dynamic Programming
+#include "1_bounds_maths.typ"
+#include "2_recurrences.typ"
+#include "3_graphs.typ"
+#include "4_dynamic_prog.typ"
 
 = Greedy Algorithms
 
