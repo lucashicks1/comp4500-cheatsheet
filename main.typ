@@ -6,11 +6,6 @@
 #include "2_recurrences.typ"
 #include "3_graphs.typ"
 #include "4_dynamic_prog.typ"
-
-= Greedy Algorithms
-
-= Amortised Analysis
-
-= Complexity Theory
-
-= Probabilistic Analysis (?????????)
+#include "5_amortised_analysis.typ"
+#include "6_complexity_theory.typ"
+#include "7_probabilistic_analysis.typ"

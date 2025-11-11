@@ -18,7 +18,7 @@ jobs:
         uses: softprops/action-gh-release@v2
         with:
           tag_name: latest
-          name: Latest Report
+          name: Report
           draft: false
           prerelease: false
           files: cheatsheet.pdf
