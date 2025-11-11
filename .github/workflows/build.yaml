@@ -1,0 +1,27 @@
+name: Render Report
+on: push
+
+jobs:
+  render_report:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: typst-community/setup-typst@v4
+
+      - name: Compile PDF
+        run: typst compile main.typ cheatsheet.pdf
+
+      - name: Create or update latest release
+        id: create_release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: latest
+          name: Latest Report
+          draft: false
+          prerelease: false
+          files: cheatsheet.pdf
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
