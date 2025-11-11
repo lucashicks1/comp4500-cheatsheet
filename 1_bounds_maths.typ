@@ -29,6 +29,8 @@ $ a sum_(k=0)^(n)x^k & = a ( 1 + x + x^2 + ... x^n ) \
 
 $ sum_(k=0)^(infinity)x^k = 1 / (1-x) "for" |x| < 1 $
 
+$ sum_(k=0)^(infinity) k x^k = x(sum_(k=0)^(infinity) k x^(k-1)) = x / (1-x)^2 $
+
 $ H_n & = 1 + 1 / 2 + ... + 1 / k \
       & = ln(n) + O(1) $
 
